@@ -59,7 +59,7 @@ import (
 )
 
 // SDKVersion is the current semantic version of this SDK.
-const SDKVersion = "1.0.0"
+const SDKVersion = "1.0.2"
 
 // Environment aliases — re-exported for convenience.
 const (
