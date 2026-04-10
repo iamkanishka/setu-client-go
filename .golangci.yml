@@ -1,0 +1,54 @@
+run:
+  timeout: 5m
+  go: "1.25"
+
+linters:
+  enable:
+    - errcheck
+    - govet
+    - staticcheck
+    - gosimple
+    - ineffassign
+    - unused
+    - gofmt
+    - goimports
+    - revive
+    - gosec
+    - bodyclose
+    - contextcheck
+    - exhaustive
+    - exportloopref
+    - noctx
+    - rowserrcheck
+    - sqlclosecheck
+    - unparam
+
+linters-settings:
+  revive:
+    rules:
+      - name: exported
+        arguments:
+          - checkPrivateReceivers
+          - disableStutteringCheck
+      - name: var-naming
+      - name: package-comments
+  gosec:
+    excludes:
+      - G115
+  goimports:
+    local-prefixes: github.com/iamkanishka/setu-client-go
+
+issues:
+  max-issues-per-linter: 0
+  max-same-issues: 0
+
+  exclude-rules:
+    - path: cmd/examples/
+      linters: [forbidigo]
+
+    - path: _test\.go
+      linters: [unparam]
+
+output:
+  formats:
+    - format: colored-line-number
