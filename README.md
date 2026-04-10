@@ -1,4 +1,4 @@
-# setu-go
+# setu-client-go
 
 Production-grade Go SDK for the [Setu API Platform](https://docs.setu.co).  
 **Go 1.25+ · Zero mandatory external deps (only x/time) · No lint issues**
@@ -327,7 +327,7 @@ Credentials are **environment-specific** — never swap sandbox and production k
 ## Project Structure
 
 ```
-setu-go/
+setu-client-go/
 ├── setu.go                          Root client: New(), Client, sub-client wiring
 ├── options.go                       WithClientID, WithEnvironment, WithRateLimit, …
 ├── go.mod                           module github.com/iamkanishka/setu-client-go · go 1.23
@@ -370,4 +370,4 @@ setu-go/
 
 ## License
 
-MIT © 2025 setu-go contributors
+MIT © 2026 Kanishka Naik

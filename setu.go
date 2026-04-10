@@ -167,7 +167,7 @@ func New(opts ...Option) (*Client, error) {
 		retryWaitMax:   10 * time.Second,
 		rateLimitRPS:   100,
 		rateLimitBurst: 20,
-		userAgent:      fmt.Sprintf("setu-go/%s", SDKVersion),
+		userAgent:      fmt.Sprintf("setu-client-go/%s", SDKVersion),
 	}
 	for _, o := range opts {
 		o(&cfg)
