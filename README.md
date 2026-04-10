@@ -330,7 +330,7 @@ Credentials are **environment-specific** — never swap sandbox and production k
 setu-client-go/
 ├── setu.go                          Root client: New(), Client, sub-client wiring
 ├── options.go                       WithClientID, WithEnvironment, WithRateLimit, …
-├── go.mod                           module github.com/iamkanishka/setu-client-go · go 1.23
+├── go.mod                           module github.com/iamkanishka/setu-client-go · go 1.25
 │
 ├── internal/
 │   ├── auth/tokenmanager.go         Token cache, auto-refresh, singleflight dedup
