@@ -18,7 +18,7 @@ import (
 	"github.com/iamkanishka/setu-client-go/pkg/setuerrors"
 )
 
-const defaultUserAgent = "setu-client-go/1.0.0"
+const defaultUserAgent = "setu-client-go/1.0.2"
 
 // Config holds configuration for a [Client].
 type Config struct {
